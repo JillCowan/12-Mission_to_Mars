@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mission to Mars</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
 </head>
 
 <body>
@@ -18,20 +19,20 @@
    
     <div class="row">
         <div class="col-md-12" id="mars-news">
-        <h2>Latest Mars News</h2>
+        <h2 style="font-size:30px; font-weight:bold">Latest Mars News</h2>
         <h4>{{ mars.title }}</h4>
         <p>{{ mars.text }}</p>
     </div>
 
     <div class="row">
         <div class="col-md-8" id="feat-img">
-        <h2>Mars Featured Image</h2>
-        <img src="{{mars.image}}" class="img-featured" alt="Featured Mars Image" width= 800px height= 600px>
+        <h2 align="center" style="font-size:30px; font-weight:bold">Mars Featured Image</h2>
+        <img src="{{mars.image}}" class="img-featured" alt="Featured Mars Image" width= 800px height= 500px vspace= 10px hspace=80px >
         </div>
         <div class="col-md-4" id="mars-weather">
             <div class= "card border secondary">
                 <div class= "card body">
-                    <h4 class= "card title">Mars Weather</h4>
+                    <h3 class= "card title" style="font-size:25px; font-weight:bold">Mars Weather</h3>
                     <p class= "card text">{{ mars.weather }}</p>
                 </div>
             </div>    
@@ -39,7 +40,7 @@
         <div class="col-md-4" id="mars-facts">
             <div class= "card border secondary">
                 <div class= "card body">
-                    <h4 class= "card title">Mars Facts</h4>
+                    <h3 class= "card title" style="font-size:25px; font-weight:bold">Mars Facts</h3>
                     <p class= "card text"> 
                         {{ mars.facts | safe }}</p>
                 </div>
@@ -48,14 +49,14 @@
     </div>
     <div class="row justify-content-center">
         <div class= "col-md-12" id="mars-hemispheres">
-            <h2 class= "text-center">Mars Hemispheres</h2>
+            <h2 class= "text-center" style="font-size:30px; font-weight:bold">Mars Hemispheres</h2>
         </div>
             {% for hemisphere in mars.hemispheres %}
-                <div class= "col-md-6">
+                <div class= "col-md-3">
                     <div class="thumbnail">
-                        <img class= "hem_image" src="{{ hemisphere.Image_url }}">
+                        <img class= "hem_image" src="{{ hemisphere.Image_url }}" width= 400px height= 400px>
                         <div class= "card body">
-                                <p class= "card text"> {{ hemisphere.Title }}</p>
+                                <b class= "card text"> {{ hemisphere.Title }}</b>
                         </div>  
                     </div>         
                 </div>
