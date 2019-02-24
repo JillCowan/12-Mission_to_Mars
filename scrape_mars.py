@@ -51,7 +51,7 @@ def scrape():
 
     #add conditional to get Sol info
     for tweet in reversed (weather_list):
-        if tweet[:3]=="Sol":
+        if tweet[:3]=="InS":
             mars_weather=tweet
 
     #Mars facts
