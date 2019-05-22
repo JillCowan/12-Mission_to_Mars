@@ -1,5 +1,4 @@
-# 12-Mission_to_Mars
-# Mission to Mars
+# Mission_to_Mars
 
 ![mission_to_mars](mission_to_mars.jpg)
 
