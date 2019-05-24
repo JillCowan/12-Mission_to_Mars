@@ -6,5 +6,7 @@ This project involved a web application build that scraped various websites for 
 
 Scraping and analysis were completed using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.  Mongo DB with Flask templating was used to create the HTML page that displays the data scraped from the various websites.
 
+![mission_to_mars](mission_to_mars.jpg)
+
 © 2019 Trilogy Education Services. All Rights Reserved.
 
